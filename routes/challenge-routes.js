@@ -8,7 +8,7 @@ const{
 
 const router = express.Router()
 
-router.use(express.json())
+
 
 router.post("/", createUsers);
 router.post("/:id", createUser);
