@@ -1,7 +1,7 @@
 const express = require("express")
 const{
     createUsers,
-    createuser,
+    createUser,
     getAllUsers,
     getUser
 } = require('../controllers/challenge-controlers')
@@ -11,7 +11,7 @@ const router = express.Router()
 router.use(express.json())
 
 router.post("/", createUsers);
-router.post("/:id", createuser);
+router.post("/:id", createUser);
 router.get("/", getAllUsers);
 router.get("/:id", getUser)
 

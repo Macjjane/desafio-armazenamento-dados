@@ -1,4 +1,5 @@
 const asyncHandler = require ("express-async-handler");
+const User = require("../models/challenge-models")
 
 
 
@@ -58,3 +59,5 @@ const getUser = asyncHandler(async (req, res) => {
 
     res.status(200).json({ message: "Obter User"})
 })
+
+module.exports = { createUsers, createUser, getAllUsers, getUser};
